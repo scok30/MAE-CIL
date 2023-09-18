@@ -506,7 +506,7 @@ class DyTox(nn.Module):
 
         merged_patch = self.mae_decoder_pred(merged_patch)
         restored_imgs = self.unpatchify(merged_patch)
-        return restored_imgs
+        return restored_imgs.detach()
 
     def forward_features(self, x):
         origin_x = x.clone()
