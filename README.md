@@ -1,6 +1,26 @@
-# MAE-CIL
-Official implementation of the paper "Masked Autoencoders are Efficient Class Incremental Learners"
+# MAE-CIL - Official PyTorch Implementation
+![](./thumbnail.jpg)
 
-We are currently organizing the journal versions of our relevant work, and the code will be open-sourced along with them.
+### [ICCV 2023] Masked Autoencoders are Efficient Class Incremental Learners
 
-We will be updating this repository gradually. You can first set up the environment according to requirements.txt (Python 3.6), and then execute sh sv.sh to start the training process.
+[Paper](https://openaccess.thecvf.com/content/ICCV2023/papers/Zhai_Masked_Autoencoders_are_Efficient_Class_Incremental_Learners_ICCV_2023_paper.pdf)
+## Usage
+
+* Training on CIFAR-100 dataset:
+
+```
+$ sh sv.sh
+```
+
+## Citation
+If you use this code for your research, please consider citing:
+
+```
+@inproceedings{zhai2023masked,
+  title={Masked autoencoders are efficient class incremental learners},
+  author={Zhai, Jiang-Tian and Liu, Xialei and Bagdanov, Andrew D and Li, Ke and Cheng, Ming-Ming},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  pages={19104--19113},
+  year={2023}
+}
+```
