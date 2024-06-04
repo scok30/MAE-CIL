@@ -20,6 +20,10 @@ $ sh sv.sh
 $ pip install -r requirements.txt
 ```
 
+## Data Download
+
+* Please download the [MAE buffer](https://drive.google.com/file/d/1koQokl_-Ve_BfQhvCYeshUpqc7_zh-K_/view?usp=drive_link) used for training. After download it, please put it in the root folder.
+
 ## Citation
 If you use this code for your research, please consider citing:
 
