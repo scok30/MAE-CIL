@@ -24,6 +24,10 @@ $ pip install -r requirements.txt
 
 * Please download the [MAE buffer](https://drive.google.com/file/d/1koQokl_-Ve_BfQhvCYeshUpqc7_zh-K_/view?usp=drive_link) used for training. After download it, please put it in the root folder.
 
+## Acknowledge
+
+* We use the codebase from [DyTox](https://github.com/arthurdouillard/dytox) to align some data processing implementations and evaluation metrics. Thanks for their wonderful work!
+
 ## Citation
 If you use this code for your research, please consider citing:
 
