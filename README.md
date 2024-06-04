@@ -12,6 +12,14 @@
 $ sh sv.sh
 ```
 
+## Environment
+
+* We recommend you to use python3.6 as the base python environment. And other dependency libraries are listed in requirements.txt
+
+```
+$ pip install -r requirements.txt
+```
+
 ## Citation
 If you use this code for your research, please consider citing:
 
