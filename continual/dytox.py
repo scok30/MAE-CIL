@@ -101,6 +101,9 @@ class DyTox(nn.Module):
             self.head = ContinualClassifier(
                 self.embed_dim * len(self.task_tokens), sum(self.nb_classes_per_task)
             ).cuda()
+
+        # below are modules of our MAECIL
+
         self.shallow_ratio = 0.2
         self.shallow_expand = nn.Linear(int(self.shallow_ratio*self.embed_dim),self.embed_dim).cuda()
         self.class_fusion = ClassFusion(self.embed_dim).cuda()
@@ -506,7 +509,7 @@ class DyTox(nn.Module):
 
         merged_patch = self.mae_decoder_pred(merged_patch)
         restored_imgs = self.unpatchify(merged_patch)
-        return restored_imgs.detach()
+        return restored_imgs
 
     def forward_features(self, x):
         origin_x = x.clone()

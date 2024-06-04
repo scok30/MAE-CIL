@@ -36,7 +36,7 @@ warnings.filterwarnings("ignore")
 
 
 def get_args_parser():
-    parser = argparse.ArgumentParser('DyTox training and evaluation script', add_help=False)
+    parser = argparse.ArgumentParser('MAECIL training and evaluation script', add_help=False)
     parser.add_argument('--batch-size', default=128, type=int)
     parser.add_argument('--incremental-batch-size', default=None, type=int)
     parser.add_argument('--epochs', default=400, type=int)
@@ -405,7 +405,6 @@ def main(args):
     #
     # --------------------------------------------------------------------------
     dataset_true_val = None
-    # args.base_epochs = args.epochs = 1600
     for task_id, dataset_train in enumerate(scenario_train):
         if args.max_task == task_id:
             print(f"Stop training because of max task")
